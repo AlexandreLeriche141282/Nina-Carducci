@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -18,22 +18,22 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+header .name {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -242,6 +242,25 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+footer{
+	background-color: rgb(229,151,95);
+	height: 150px;
+	font-weight: 500;
+	font-size: 17px;
+}
+
+footer div{
+	display: block;
+	margin: 0 auto;
+	width: 450px;
+}
+address{
+padding-top: 20px;
+}
+footer div a{
+ color: inherit; 
 }
 
 @media all and (max-width: 1180px) {
