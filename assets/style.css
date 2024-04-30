@@ -256,8 +256,9 @@ footer div{
 	margin: 0 auto;
 	width: 450px;
 }
-address{
+.address{
 padding-top: 20px;
+margin-bottom:1rem;
 }
 footer div a{
  color: inherit; 
