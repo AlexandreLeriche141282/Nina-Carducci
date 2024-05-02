@@ -16,17 +16,27 @@ header {
 	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
+
+	@media all and (max-width: 660px) {
+		display: block;
+		}
 }
 
 header .name {
 	font-size: 26px;
+	@media all and (max-width: 660px) {
+		text-align: center;
+		}
 }
-
 nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
+	@media all and (max-width: 660px) {
+		justify-content: center;
+		align-items: center;
+		}
 }
 
 nav li {
@@ -248,13 +258,16 @@ footer{
 	background-color: rgb(229,151,95);
 	height: 150px;
 	font-weight: 500;
-	font-size: 17px;
+	font-size: calc(13px + (17 - 13) * ((100vw - 320px) / (1920 - 320)));
+	display: flex;
+	text-align: center;
+	color: white;
 }
 
 footer div{
 	display: block;
 	margin: 0 auto;
-	width: 450px;
+	padding: 0 5px;
 }
 .address{
 padding-top: 20px;
